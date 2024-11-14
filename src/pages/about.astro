@@ -1,0 +1,17 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import CustomTitle from '../components/CustomTitle.astro';
+---
+
+<MainLayout title="About">
+	<h1>About</h1>
+
+	<CustomTitle title='this is a custom title' />
+</MainLayout>
+
+<!-- is:global sirve para que se pasen los estilos a los componentes importados -->
+<style is:inline>
+	h1 {
+		color: red;
+	}
+</style>
